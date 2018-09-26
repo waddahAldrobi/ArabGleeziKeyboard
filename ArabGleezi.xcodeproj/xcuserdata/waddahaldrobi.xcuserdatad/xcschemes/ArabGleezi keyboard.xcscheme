@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FC471C7B1E0B08A500D80209"
-               BuildableName = "lisu keyboard.appex"
-               BlueprintName = "lisu keyboard"
-               ReferencedContainer = "container:lisuKeyboard.xcodeproj">
+               BuildableName = "ArabGleezi keyboard.appex"
+               BlueprintName = "ArabGleezi keyboard"
+               ReferencedContainer = "container:ArabGleezi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -30,9 +30,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "FC471C621E0A4EDE00D80209"
-               BuildableName = "lisuKeyboard.app"
-               BlueprintName = "lisuKeyboard"
-               ReferencedContainer = "container:lisuKeyboard.xcodeproj">
+               BuildableName = "ArabGleezi.app"
+               BlueprintName = "ArabGleezi"
+               ReferencedContainer = "container:ArabGleezi.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,9 +48,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC471C7B1E0B08A500D80209"
-            BuildableName = "lisu keyboard.appex"
-            BlueprintName = "lisu keyboard"
-            ReferencedContainer = "container:lisuKeyboard.xcodeproj">
+            BuildableName = "ArabGleezi keyboard.appex"
+            BlueprintName = "ArabGleezi keyboard"
+            ReferencedContainer = "container:ArabGleezi.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC471C621E0A4EDE00D80209"
-            BuildableName = "lisuKeyboard.app"
-            BlueprintName = "lisuKeyboard"
-            ReferencedContainer = "container:lisuKeyboard.xcodeproj">
+            BuildableName = "ArabGleezi.app"
+            BlueprintName = "ArabGleezi"
+            ReferencedContainer = "container:ArabGleezi.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -92,9 +92,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "FC471C621E0A4EDE00D80209"
-            BuildableName = "lisuKeyboard.app"
-            BlueprintName = "lisuKeyboard"
-            ReferencedContainer = "container:lisuKeyboard.xcodeproj">
+            BuildableName = "ArabGleezi.app"
+            BlueprintName = "ArabGleezi"
+            ReferencedContainer = "container:ArabGleezi.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
