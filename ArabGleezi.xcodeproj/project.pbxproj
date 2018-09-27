@@ -178,7 +178,7 @@
 				TargetAttributes = {
 					FC471C621E0A4EDE00D80209 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = RPB3854KB6;
+						DevelopmentTeam = 5R98LK6F9X;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -401,7 +401,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RPB3854KB6;
+				DEVELOPMENT_TEAM = 5R98LK6F9X;
 				INFOPLIST_FILE = ArabGleezi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -423,7 +423,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RPB3854KB6;
+				DEVELOPMENT_TEAM = 5R98LK6F9X;
 				INFOPLIST_FILE = ArabGleezi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
