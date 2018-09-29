@@ -137,8 +137,8 @@ func lisuKeyboardLayout(controller: UIInputViewController, totalWidth: CGFloat, 
     
     // Determine button width
     // So many magic numbers... :<<<
-    let characterSize = CGSize(width: (viewWidth-(GAP_WIDTH * MAX_NUM_GAP_HOR))/10, height: (viewHeight - (GAP_HEIGHT * MAX_NUM_GAP_VER))/4)
-    let characterSize2Row = CGSize(width: (viewWidth-(GAP_WIDTH * MAX_NUM_GAP_HOR))/9.5, height: (viewHeight - (GAP_HEIGHT * MAX_NUM_GAP_VER))/4)
+    let characterSize = CGSize(width: (viewWidth-(GAP_WIDTH * MAX_NUM_GAP_HOR))/10, height: (viewHeight - (GAP_HEIGHT * MAX_NUM_GAP_VER))/4.5)
+    let characterSize2Row = CGSize(width: (viewWidth-(GAP_WIDTH * MAX_NUM_GAP_HOR))/9.5, height: (viewHeight - (GAP_HEIGHT * MAX_NUM_GAP_VER))/4.5)
     let shiftDeleteSize = CGSize(width: (viewWidth - characterSize.width * 7 - GAP_WIDTH * 10)/2, height: characterSize.height ) // There are seven keys between shift and delete.
     let spacebarSize = CGSize(width: (characterSize.width * 5 + GAP_WIDTH * 4), height: characterSize.height)
     
