@@ -170,22 +170,17 @@ class KeyboardViewController: UIInputViewController {
                 viewWidth = portraitSize.width
             } else {
                 viewHeight = landscapeSize.height
-                viewWidth = landscapeSize.width - (landscapeSize.width*0.2678)
+                viewWidth = landscapeSize.width
+
+//                viewWidth = landscapeSize.width - (landscapeSize.width*0.2678)
 //                if landscapeSize.width > 736 {
 //                    viewWidth = landscapeSize.width - 140
 //                } else if landscapeSize.width > 812 {
 //                    viewWidth = landscapeSize.width - 240
 //                }
                 
-                
-//                let btn = UIBarButtonItem()
-//                btn.title = String(Float(viewWidth))
-//                topBar.items = [btn]
-                textDocumentProxy.insertText(String(Float(viewWidth)))
-                
-                
-                
-                print(landscapeSize.width)
+//                textDocumentProxy.insertText(String(Float(viewWidth))
+//                print(landscapeSize.width)
             }
             
             coordinator.animateAlongsideTransition(in: self.view, animation: {(_ context: UIViewControllerTransitionCoordinatorContext) -> Void in

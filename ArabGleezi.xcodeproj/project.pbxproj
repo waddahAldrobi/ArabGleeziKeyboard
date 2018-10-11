@@ -178,7 +178,7 @@
 				TargetAttributes = {
 					FC471C621E0A4EDE00D80209 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 5R98LK6F9X;
+						DevelopmentTeam = RPB3854KB6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -191,7 +191,7 @@
 					};
 					FC471C7B1E0B08A500D80209 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 5R98LK6F9X;
+						DevelopmentTeam = RPB3854KB6;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -417,11 +417,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5R98LK6F9X;
+				DEVELOPMENT_TEAM = RPB3854KB6;
 				INFOPLIST_FILE = ArabGleezi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ethan.keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waddah.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -439,11 +439,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5R98LK6F9X;
+				DEVELOPMENT_TEAM = RPB3854KB6;
 				INFOPLIST_FILE = ArabGleezi/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ethan.keyboard;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waddah.keyboard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -459,11 +459,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5R98LK6F9X;
+				DEVELOPMENT_TEAM = RPB3854KB6;
 				INFOPLIST_FILE = "ArabGleezi keyboard/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ethan.keyboard.ext;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waddah.keyboard.ext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
@@ -479,11 +479,11 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5R98LK6F9X;
+				DEVELOPMENT_TEAM = RPB3854KB6;
 				INFOPLIST_FILE = "ArabGleezi keyboard/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ethan.keyboard.ext;
+				PRODUCT_BUNDLE_IDENTIFIER = com.waddah.keyboard.ext;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
