@@ -391,8 +391,19 @@ class KeyboardViewController: UIInputViewController {
     func spacePressedOnce(sender: UIButton) {
         self.whitenKey(sender: sender)
         
-        lastChar = ""
-        self.textDocumentProxy.insertText((sender.titleLabel?.text)!)
+        // Autoperiod
+        if lastChar != " "{
+            self.textDocumentProxy.insertText((sender.titleLabel?.text)!)
+            lastChar = " "
+        }
+        else {
+            self.textDocumentProxy.deleteBackward()
+            self.textDocumentProxy.insertText(".")
+            self.textDocumentProxy.insertText((sender.titleLabel?.text)!)
+            lastChar = ""
+        }
+    
+        
         feedbackButton.title = lastWordTyped
         sG.append((sender.titleLabel?.text)!)
     }
