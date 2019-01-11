@@ -331,6 +331,7 @@ class KeyboardViewController: UIInputViewController {
     func backspacePressedLong(gestureRecognizer: UILongPressGestureRecognizer) {
         if gestureRecognizer.state == UIGestureRecognizerState.began {
             if backspaceButtonTimer == nil {
+                // Fast deleting here
                 backspaceButtonTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(KeyboardViewController.backspaceDelete), userInfo: nil, repeats: true)
                 backspaceButtonTimer!.tolerance = 0.01
             }
