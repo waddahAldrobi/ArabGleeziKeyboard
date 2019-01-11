@@ -455,6 +455,8 @@ class KeyboardViewController: UIInputViewController {
         
         
         // Here
+        var listBtn = [UIBarButtonItem]()
+        
          if Reachability.isConnectedToNetwork() && hasAccess{
             if !breakChar.contains((sender.titleLabel?.text!)!) {
                 
@@ -462,7 +464,7 @@ class KeyboardViewController: UIInputViewController {
                 DispatchQueue.main.sync {
                         self.feedbackButton.title = newWord as? String
                         var suggestionsListStr = (newWord as? String)?.characters.split{$0 == ","}.map(String.init)
-                        var listBtn = [UIBarButtonItem]()
+                    
                     
                         var k = 0
                         for i in suggestionsListStr! {
@@ -498,6 +500,20 @@ class KeyboardViewController: UIInputViewController {
                         self.topBar.items = listBtn
                 }
             })
+                // Needs refactoring
+                getHarakatWord( word: lastWordTyped!, withCompletion: { a in
+                    
+                    DispatchQueue.main.sync {
+                        let btn = UIBarButtonItem()
+                        btn.title = (a as! String)
+                        btn.title?.dropLast()
+                        btn.action = #selector(self.wordPressedOnce(sender:))
+                        listBtn.append(btn)
+                        
+                        self.topBar.items = listBtn
+                    }
+                })
+                
             }
         }
     }
@@ -796,6 +812,8 @@ let breakChar = [ "-","/",":",";","(",")","$","&","@","\"",".",",","?","!","[","
 
 var characterSet = CharacterSet(charactersIn: "-/:;()$&@“.,?!’[]{}#%^*+=_\\|~<>€£¥• ")
 
+
+// Yamli API call
 func getString( word : String, withCompletion completion: @escaping ((AnyObject) -> Void)) {
     
     var word2 = word
@@ -832,3 +850,45 @@ func getString( word : String, withCompletion completion: @escaping ((AnyObject)
     }
 }
 
+
+// Harakat API Call
+struct Root2 : Decodable {
+    private enum CodingKeys : String, CodingKey {
+        case result = "result"
+    }
+    let result : Result
+}
+
+struct Result: Decodable {
+    let translations: String
+}
+
+func getHarakatWord( word : String, withCompletion completion: @escaping ((AnyObject) -> Void)) {
+    
+    var word2 = word
+    //Implementing URLSession
+    let urlString = "https://harakat.ae/form.json?from=ara&to=ara_vocalize&text=\(word2)"
+    
+    guard let url = URL(string: urlString) else { return }
+    
+    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        if error != nil {
+            completion(error as AnyObject)
+            return
+        }
+            
+        else if let data = data {
+            do {
+                let course = try JSONDecoder().decode(Root2.self, from: data)
+                var a = course.result.translations
+                
+                completion(a as AnyObject)
+            }
+            catch {
+                completion(error as AnyObject)
+            }
+        }
+    }
+    task.resume()
+    //End implementing URLSession
+}
